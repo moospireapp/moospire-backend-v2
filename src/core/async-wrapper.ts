@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import { apiStatus, respondWith } from "@/core";
+import { apiStatus, respondWith } from "@/core/index.js";
 
 /**
  * Wraps an asynchronous function for error handling in Express routes.

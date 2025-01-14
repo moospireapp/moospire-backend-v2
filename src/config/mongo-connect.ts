@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import { env, appLogger } from "@/config";
+import { env, appLogger } from "@/config/index.js";
 
 /**
  * Connect to MongoDB using the provided connection string, and log the result

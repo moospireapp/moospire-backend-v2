@@ -1,8 +1,8 @@
 import path from "path";
 import sharp from "sharp";
 import fsExtra from "fs-extra";
-import { apiStatus } from "@/core";
-import { env, appLogger, cloudinary } from "@/config";
+import { apiStatus } from "@/core/index.js";
+import { env, appLogger, cloudinary } from "@/config/index.js";
 
 class FileUploadHandler {
   // private imageDimension = {

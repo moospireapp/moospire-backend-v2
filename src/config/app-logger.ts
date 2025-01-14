@@ -1,7 +1,7 @@
 import path from "path";
 import { createLogger, format, transports, Logger } from "winston";
-import { env } from "@/config";
-import { getFileDir } from "@/utilities";
+import { env } from "@/config/index.js";
+import { getFileDir } from "@/utilities/index.js";
 
 // Create __dirname equivalent for ES modules
 const __dirname = getFileDir(import.meta.url);

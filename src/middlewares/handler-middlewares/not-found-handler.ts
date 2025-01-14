@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import { apiStatus } from "@/core";
+import { apiStatus } from "@/core/index.js";
 
 interface Route {
   path: string;

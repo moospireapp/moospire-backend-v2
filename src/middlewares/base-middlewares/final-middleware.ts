@@ -1,5 +1,5 @@
 import listEndpoints from "express-list-endpoints";
-import { notFoundHandler, errorHandler } from "@/middlewares";
+import { notFoundHandler, errorHandler } from "@/middlewares/index.js";
 import { Application, Request, Response, NextFunction } from "express";
 
 /**

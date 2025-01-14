@@ -2,11 +2,11 @@ import { NextFunction } from "express";
 import axios from "axios";
 import querystring from "querystring";
 import { google } from "googleapis";
-import { authService } from "@/modules/auth-module";
-import { apiStatus, emailHandler } from "@/core";
-import { env, appLogger } from "@/config";
-import { User } from "@/models";
-import { UserRole } from "@/types/user-type";
+import { authService } from "@/modules/auth-module/index.js";
+import { apiStatus, emailHandler } from "@/core/index.js";
+import { env, appLogger } from "@/config/index.js";
+import { User } from "@/models/index.js";
+import { UserRole } from "@/types/user-type.js";
 import {
   GoogleTokensResult,
   FigmaTokensResult,

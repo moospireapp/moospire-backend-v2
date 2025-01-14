@@ -1,3 +1,3 @@
-import { getFileDir, convertToMilliseconds } from "@/utilities/utils";
+import { getFileDir, convertToMilliseconds } from "@/utilities/utils.js";
 
 export { getFileDir, convertToMilliseconds };

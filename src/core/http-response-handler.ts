@@ -1,6 +1,6 @@
 import { Response, CookieOptions } from "express";
-import { httpStatus } from "@/core";
-import { env } from "@/config";
+import { httpStatus } from "@/core/index.js";
+import { env } from "@/config/index.js";
 
 interface IApiResponse {
   status: string;

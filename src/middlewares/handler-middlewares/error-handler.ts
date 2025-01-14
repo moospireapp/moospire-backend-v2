@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from "express";
-import { ApiResponse, apiStatus, respondWith } from "@/core";
-import { appLogger } from "@/config";
+import { ApiResponse, apiStatus, respondWith } from "@/core/index.js";
+import { appLogger } from "@/config/index.js";
 
 /**
  * Middleware for handling errors in the application.

@@ -1,9 +1,9 @@
 import { Application, Router } from "express";
-import { env } from "@/config";
-import baseRoutes from "@/routes/base-routes";
-import { authRoute } from "@/modules/auth-module";
-import { oAuthRoute } from "@/modules/o-auth-module";
-import { profileRoute } from "@/modules/profile-module";
+import { env } from "@/config/index.js";
+import baseRoutes from "@/routes/base-routes.js";
+import { authRoute } from "@/modules/auth-module/index.js";
+import { oAuthRoute } from "@/modules/o-auth-module/index.js";
+import { profileRoute } from "@/modules/profile-module/index.js";
 
 let appInstance: Application;
 

@@ -1,4 +1,4 @@
-import { apiStatus, respondWith } from "@/core";
+import { apiStatus, respondWith } from "@/core/index.js";
 import { Request, Response, Router } from "express";
 
 const baseRoute = Router();

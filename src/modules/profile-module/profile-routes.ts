@@ -1,7 +1,7 @@
 import { Router } from "express";
-import { authMiddleware } from "@/modules/auth-module";
-import profileValidator from "./profile-validators";
-import profileControllers from "./profile-controllers";
+import { authMiddleware } from "@/modules/auth-module/index.js";
+import profileValidator from "./profile-validators.js";
+import profileControllers from "./profile-controllers.js";
 
 const profile = Router();
 

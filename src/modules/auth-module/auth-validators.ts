@@ -5,9 +5,9 @@ import {
   RequestUserPassword,
   ResetUserPasswordRequest,
   VerifyUserOTPRequest,
-} from "@/types/user-type";
-import { validate, sanitize, asyncWrapper } from "@/core";
-import { authService } from "@/modules/auth-module";
+} from "@/types/user-type.js";
+import { validate, sanitize, asyncWrapper } from "@/core/index.js";
+import { authService } from "@/modules/auth-module/index.js";
 
 class AuthValidator {
   // Signup User

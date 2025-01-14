@@ -1,11 +1,11 @@
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 import jwt, { JwtPayload } from "jsonwebtoken";
 import * as otpGenerator from "otp-generator";
-import { env, appLogger, redisClient } from "@/config";
-import { IUser, UserRole } from "@/types/user-type";
-import { apiStatus } from "@/core";
+import { env, appLogger, redisClient } from "@/config/index.js";
+import { IUser, UserRole } from "@/types/user-type.js";
+import { apiStatus } from "@/core/index.js";
 import { Request } from "express";
-import { User } from "@/models";
+import { User } from "@/models/index.js";
 
 interface PaginationOptions {
   total: number;

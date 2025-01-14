@@ -1,5 +1,5 @@
 import { Application } from "express";
-import { env, appLogger, mongoConnect, redisConnect } from "@/config";
+import { env, appLogger, mongoConnect, redisConnect } from "@/config/index.js";
 
 /**
  * It connects to the database and starts the server

@@ -1,5 +1,5 @@
-import bcrypt from "bcrypt";
-import { env, appLogger } from "@/config";
+import bcrypt from "bcryptjs";
+import { env, appLogger } from "@/config/index.js";
 
 class Sanitization {
   body_data: string = "";

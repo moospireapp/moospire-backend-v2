@@ -1,6 +1,6 @@
 import { Router } from "express";
-import { authMiddleware } from "@/modules/auth-module";
-import { oAuthController } from "@/modules/o-auth-module";
+import { authMiddleware } from "@/modules/auth-module/index.js";
+import { oAuthController } from "@/modules/o-auth-module/index.js";
 
 const oauth = Router();
 

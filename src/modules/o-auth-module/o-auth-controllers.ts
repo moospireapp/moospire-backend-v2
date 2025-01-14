@@ -4,11 +4,11 @@ import {
   apiStatus,
   respondWith,
   serveCookieResponse,
-} from "@/core";
-import { oAuthService } from "@/modules/o-auth-module";
-import { GoogleProfile, FigmaProfile } from "@/types/o-user-type";
-import { UserType } from "@/types/user-type";
-import { authService } from "@/modules/auth-module";
+} from "@/core/index.js";
+import { oAuthService } from "@/modules/o-auth-module/index.js";
+import { GoogleProfile, FigmaProfile } from "@/types/o-user-type.js";
+import { UserType } from "@/types/user-type.js";
+import { authService } from "@/modules/auth-module/index.js";
 
 class OAuthController {
   // Handles google auth url

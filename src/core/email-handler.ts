@@ -3,9 +3,9 @@ import path from "path";
 import nodemailer, { Transporter } from "nodemailer";
 import mailgun from "nodemailer-mailgun-transport";
 import { NextFunction } from "express";
-import { env, appLogger } from "@/config";
-import { getFileDir } from "@/utilities";
-import { apiStatus } from "@/core";
+import { env, appLogger } from "@/config/index.js";
+import { getFileDir } from "@/utilities/index.js";
+import { apiStatus } from "@/core/index.js";
 
 // Create __dirname equivalent for ES modules
 const __dirname = getFileDir(import.meta.url);

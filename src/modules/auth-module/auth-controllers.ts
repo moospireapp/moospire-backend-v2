@@ -5,11 +5,11 @@ import {
   respondWith,
   serveCookieResponse,
   emailHandler,
-} from "@/core";
-import { env, redisClient } from "@/config";
-import { UserRole, UserType } from "@/types/user-type";
-import { User } from "@/models";
-import { authService } from "@/modules/auth-module";
+} from "@/core/index.js";
+import { env, redisClient } from "@/config/index.js";
+import { UserRole, UserType } from "@/types/user-type.js";
+import { User } from "@/models/index.js";
+import { authService } from "@/modules/auth-module/index.js";
 
 interface AuthRequest extends Request {
   payload?: {

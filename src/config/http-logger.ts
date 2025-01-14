@@ -1,8 +1,8 @@
 import fs from "fs";
 import path from "path";
 import morgan from "morgan";
-import { env } from "@/config";
-import { getFileDir } from "@/utilities";
+import { env } from "@/config/index.js";
+import { getFileDir } from "@/utilities/index.js";
 
 // Create __dirname equivalent for ES modules
 const __dirname = getFileDir(import.meta.url);

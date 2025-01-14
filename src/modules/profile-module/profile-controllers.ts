@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from "express";
-import { asyncWrapper, apiStatus, respondWith } from "@/core";
-import { User } from "@/models";
+import { asyncWrapper, apiStatus, respondWith } from "@/core/index.js";
+import { User } from "@/models/index.js";
 
 interface ProfileUpdateRequest extends Request {
   payload?: {

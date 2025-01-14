@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from "express";
-import { asyncWrapper, apiStatus } from "@/core";
-import { authService } from "@/modules/auth-module";
-import { redisClient } from "@/config";
+import { asyncWrapper, apiStatus } from "@/core/index.js";
+import { authService } from "@/modules/auth-module/index.js";
+import { redisClient } from "@/config/index.js";
 
 /* Extends the Request interface to include a payload for the authenticated user */
 interface AuthRequest extends Request {

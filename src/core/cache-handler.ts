@@ -1,5 +1,5 @@
 import { promisify } from "util";
-import { appLogger, redisClient } from "@/config";
+import { appLogger, redisClient } from "@/config/index.js";
 
 class CacheHandler {
   private getAsync: (key: string) => Promise<string | null>;

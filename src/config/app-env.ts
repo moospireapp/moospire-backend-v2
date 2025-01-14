@@ -1,6 +1,6 @@
 import path from "path";
 import dotenv from "dotenv";
-import { getFileDir, convertToMilliseconds } from "@/utilities";
+import { getFileDir, convertToMilliseconds } from "@/utilities/index.js";
 
 // Create __dirname equivalent for ES modules
 const __dirname = getFileDir(import.meta.url);

@@ -1,7 +1,10 @@
 import express, { Application } from "express";
-import { runInitialMiddleware, runFinalMiddleware } from "@/middlewares";
-import loadAppRoutes from "@/routes";
-import runApp from "@/run-app";
+import {
+  runInitialMiddleware,
+  runFinalMiddleware,
+} from "@/middlewares/index.js";
+import loadAppRoutes from "@/routes/index.js";
+import runApp from "@/run-app.js";
 
 const app: Application = express();
 

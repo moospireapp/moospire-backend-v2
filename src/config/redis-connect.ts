@@ -1,5 +1,5 @@
 import { createClient, RedisClientType } from "redis";
-import { env, appLogger } from "@/config";
+import { env, appLogger } from "@/config/index.js";
 
 // Create a typed Redis client
 const redisClient: RedisClientType = createClient({

@@ -5,7 +5,7 @@ import cookieParser from "cookie-parser";
 import compression from "compression";
 import path from "path";
 import cors from "cors";
-import { httpLogger, env } from "@/config";
+import { httpLogger, env } from "@/config/index.js";
 
 const allowedOrigins = env.ALLOWED_ORIGINS as string;
 

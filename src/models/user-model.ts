@@ -1,6 +1,6 @@
 import { Schema, model, PaginateModel } from "mongoose";
 import mongoosePaginate from "mongoose-paginate";
-import { UserType, IUser, UserRole } from "@/types/user-type";
+import { UserType, IUser, UserRole } from "@/types/user-type.js";
 
 // Interface for the static method
 interface IUserModel extends PaginateModel<IUser> {

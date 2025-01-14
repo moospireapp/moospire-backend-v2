@@ -1,5 +1,5 @@
 import path from "path";
-import { apiStatus } from "@/core";
+import { apiStatus } from "@/core/index.js";
 
 class ValidatorService {
   private body_field: string = "";

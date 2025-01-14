@@ -2,8 +2,8 @@ import { Response, NextFunction } from "express";
 import {
   UserProfileRequest,
   UserProfileTypeRequest,
-} from "@/types/profile-type";
-import { validate, asyncWrapper } from "@/core";
+} from "@/types/profile-type.js";
+import { validate, asyncWrapper } from "@/core/index.js";
 
 class ProfileValidator {
   // Validate user profile data

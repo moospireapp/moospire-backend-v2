@@ -13,7 +13,7 @@ export const getFileDir = (metaUrl: string): string => {
 
 export const convertToMilliseconds = (input: string) => {
   const timeValue = parseInt(input); // Get the numeric value
-  const timeUnit = input.slice(-1); // Get the last character (unit)
+  const timeUnit = input?.slice(-1); // Get the last character (unit)
 
   let milliseconds;
 
