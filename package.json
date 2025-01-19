@@ -10,6 +10,8 @@
     "start": "npm run build && NODE_ENV=production node dist/server.js",
     "build": "NODE_OPTIONS='--max-old-space-size=4096' tsc && tsc-alias",
     "serve": "pm2-runtime dist/server.js",
+    "docker:build": "docker-compose -f docker-compose.yml -f docker-compose.prod.yml build --no-cache",
+    "docker:serve": "docker-compose -f docker-compose.yml -f docker-compose.prod.yml up -d",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
