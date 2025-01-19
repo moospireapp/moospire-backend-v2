@@ -8,7 +8,7 @@
     "_": "nodemon --watch src --ext ts --env-file .env --exec tsx -r tsconfig-paths/register src/server.ts",
     "dev": "nodemon --watch src --ext ts --exec tsx -r tsconfig-paths/register src/server.ts",
     "start": "npm run build && NODE_ENV=production node dist/server.js",
-    "build": "tsc && tsc-alias",
+    "build": "NODE_OPTIONS='--max-old-space-size=4096' tsc && tsc-alias",
     "serve": "pm2-runtime dist/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
