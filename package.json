@@ -8,10 +8,13 @@
     "_": "nodemon --watch src --ext ts --env-file .env --exec tsx -r tsconfig-paths/register src/server.ts",
     "dev": "nodemon --watch src --ext ts --exec tsx -r tsconfig-paths/register src/server.ts",
     "start": "npm run build && NODE_ENV=production node dist/server.js",
-    "build": "NODE_OPTIONS='--max-old-space-size=4096' tsc && tsc-alias",
+    "build:tsc": "tsc",
+    "build:alias": "tsc-alias",
+    "build": "NODE_OPTIONS='--max-old-space-size=512' npm run build:tsc && npm run build:alias",
     "serve": "pm2-runtime dist/server.js",
     "docker:build": "docker-compose -f docker-compose.yml -f docker-compose.prod.yml build --no-cache",
     "docker:serve": "docker-compose -f docker-compose.yml -f docker-compose.prod.yml up -d",
+    "docker:stop": "docker-compose -f docker-compose.yml -f docker-compose.prod.yml stop",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
